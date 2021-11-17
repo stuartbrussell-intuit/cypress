@@ -177,8 +177,8 @@ commands:
           # Dependencies needed by circle-cache.js, before we "yarn" or unpack cached node_modules
           name: Cache Helper Dependencies
           working_directory: ~/
-      - run:
           command: npm i globby@11.0.4 fs-extra@10.0.0 minimist@1.2.5 fast-json-stable-stringify@2.1.0
+      - run:
           name: Generate Circle Cache Key
           command: node scripts/circle-cache.js --action cacheKey > circle_cache_key
       - restore_cache:
