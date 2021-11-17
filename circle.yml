@@ -926,6 +926,8 @@ jobs:
     <<: *defaults
     resource_class: medium+
     steps:
+      - install-required-node
+      - install-build-setup
       - restore_cached_workspace
       - run:
           name: check nvm & yarn
