@@ -2353,8 +2353,8 @@ workflows:
   linux:
     <<: *linux-workflow
     # <<: *linux-2-workflow
-  windows:
-    <<: *windows-workflow
+  # windows:
+  #   <<: *windows-workflow
   mac:
     <<: *mac-workflow
     # usually we don't build Mac app - it takes a long time
