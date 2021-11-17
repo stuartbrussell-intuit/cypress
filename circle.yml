@@ -270,7 +270,7 @@ commands:
           command: |
             . ./scripts/load-nvm.sh
             yarn check-terminal
-      - run:
+
   install-required-node:
     # https://discuss.circleci.com/t/switch-nodejs-version-on-machine-executor-solved/26675/2
     description: Install Node version matching .node-version
