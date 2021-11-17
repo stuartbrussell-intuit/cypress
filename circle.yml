@@ -41,7 +41,7 @@ executors:
       - image: cypress/browsers:node16.5.0-chrome94-ff93
     # by default, we use "small" to save on CI costs. bump on a per-job basis if needed.
     resource_class: small
-    shell: bash.exe --login -eo pipefail
+    shell: /bin/bash --login -eo pipefail
     environment:
       PLATFORM: linux
 
