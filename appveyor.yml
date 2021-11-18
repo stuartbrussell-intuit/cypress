@@ -4,6 +4,7 @@ branches:
     - develop
     - 9.0-release
     - /win*/
+    - test-windows-install
 
 # https://www.appveyor.com/docs/lang/nodejs-iojs/
 environment:
